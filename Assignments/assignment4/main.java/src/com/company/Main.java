@@ -10,6 +10,16 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        int[] numarr = {4, 5, 6, 3, 7, 8, 1, 9, 0};
+        System.out.println(summation(numarr));
+    }
+
+    static int summation(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; ++i) {
+            sum += array[i];
+        }
+        return sum;
     }
 }
